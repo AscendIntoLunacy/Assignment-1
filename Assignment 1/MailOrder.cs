@@ -66,6 +66,21 @@ namespace Assignment_1
             }
 
         }
+
+        //Resets all fields to either blank or default values.
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            EmployeeNameTextbox.Text = "";
+            EmployeeIDTextbox.Text = "";
+            TotalHoursUpDownBox.Value = 0;
+            SalesBonusTextbox.Text = "$0.00";
+        }
+
+        // Shows message box that tells the user that it is printing.
+        private void PrintButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Printing to the Printer", "Printing", MessageBoxButtons.OKCancel);
+        }
     }   
 }
 

@@ -125,6 +125,7 @@
             this.SalesBonusTextbox.ReadOnly = true;
             this.SalesBonusTextbox.Size = new System.Drawing.Size(287, 38);
             this.SalesBonusTextbox.TabIndex = 9;
+            this.SalesBonusTextbox.Text = "$0.00";
             // 
             // CalculateButton
             // 
@@ -144,6 +145,7 @@
             this.NextButton.TabIndex = 11;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // PrintButton
             // 
@@ -153,6 +155,7 @@
             this.PrintButton.TabIndex = 12;
             this.PrintButton.Text = "Print";
             this.PrintButton.UseVisualStyleBackColor = true;
+            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
             // LanguagesGroupBox
             // 
