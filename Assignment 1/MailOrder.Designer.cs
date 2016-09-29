@@ -129,23 +129,23 @@
             // 
             // CalculateButton
             // 
-            this.CalculateButton.Location = new System.Drawing.Point(46, 551);
+            this.CalculateButton.Location = new System.Drawing.Point(18, 550);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(170, 50);
             this.CalculateButton.TabIndex = 10;
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
-            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
+            this.CalculateButton.Click += new System.EventHandler(this._CalculateButton_Click);
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(306, 550);
+            this.NextButton.Location = new System.Drawing.Point(283, 550);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(100, 51);
             this.NextButton.TabIndex = 11;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            this.NextButton.Click += new System.EventHandler(this._NextButton_Click);
             // 
             // PrintButton
             // 
@@ -155,7 +155,7 @@
             this.PrintButton.TabIndex = 12;
             this.PrintButton.Text = "Print";
             this.PrintButton.UseVisualStyleBackColor = true;
-            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
+            this.PrintButton.Click += new System.EventHandler(this._PrintButton_Click);
             // 
             // LanguagesGroupBox
             // 
@@ -177,7 +177,7 @@
             this.FrenchRadioButton.TabIndex = 1;
             this.FrenchRadioButton.Text = "Francais";
             this.FrenchRadioButton.UseVisualStyleBackColor = true;
-            this.FrenchRadioButton.CheckedChanged += new System.EventHandler(this.FrenchRadioButton_CheckedChanged);
+            this.FrenchRadioButton.CheckedChanged += new System.EventHandler(this._FrenchRadioButton_CheckedChanged);
             // 
             // EnglishRadioButton
             // 
@@ -190,7 +190,7 @@
             this.EnglishRadioButton.TabStop = true;
             this.EnglishRadioButton.Text = "English";
             this.EnglishRadioButton.UseVisualStyleBackColor = true;
-            this.EnglishRadioButton.CheckedChanged += new System.EventHandler(this.EnglishRadioButton_CheckedChanged);
+            this.EnglishRadioButton.CheckedChanged += new System.EventHandler(this._EnglishRadioButton_CheckedChanged);
             // 
             // LogoPictureBox
             // 

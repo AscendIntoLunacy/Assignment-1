@@ -9,6 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Application Name: Mail Order Sales Bonus Calculator.
+/// Author's Name: Bradley Girard
+/// Application Creation Date: September 22nd, 2016
+/// Application Summary: Calculates an employee's sales bonus based on the 
+///                      hours worked, and the company's sales for the month.
+/// </summary>
+
 namespace Assignment_1
 {
     public partial class SalesBonus : Form
@@ -19,17 +27,20 @@ namespace Assignment_1
         }
         
         // Changes the labels to French.
-        private void FrenchRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void _FrenchRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EmployeeNameLabel.Text = "Nom de l'employé:";
             EmployeeIDLabel.Text = "Employé ID:";
             TotalHoursLabel.Text = "Heures totales:";
             TotalMonthlySalesLabel.Text = "Total des ventes mensuelles:";
             SalesBonusLabel.Text = "Bonus de vente:";
+            CalculateButton.Text = "Calculer";
+            NextButton.Text = "Prochain";
+            PrintButton.Text = "Impression";
         }
 
         // Changes the Labels to English.
-        private void EnglishRadioButton_CheckedChanged(object sender, EventArgs e)
+        private void _EnglishRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             EmployeeNameLabel.Text = "Employee Name:";
             EmployeeIDLabel.Text = "Employee ID:";
@@ -44,7 +55,7 @@ namespace Assignment_1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void CalculateButton_Click(object sender, EventArgs e)
+        private void _CalculateButton_Click(object sender, EventArgs e)
         {
             // Private variables
             double _HoursWorked;
@@ -68,7 +79,7 @@ namespace Assignment_1
         }
 
         //Resets all fields to either blank or default values.
-        private void NextButton_Click(object sender, EventArgs e)
+        private void _NextButton_Click(object sender, EventArgs e)
         {
             EmployeeNameTextbox.Text = "";
             EmployeeIDTextbox.Text = "";
@@ -77,7 +88,7 @@ namespace Assignment_1
         }
 
         // Shows message box that tells the user that it is printing.
-        private void PrintButton_Click(object sender, EventArgs e)
+        private void _PrintButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Printing to the Printer", "Printing", MessageBoxButtons.OKCancel);
         }
